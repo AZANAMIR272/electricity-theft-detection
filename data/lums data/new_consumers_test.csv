@@ -1,6 +1,0 @@
-CONS_NO,Missing Day Count,Avg Consumption,Std Consumption,Min Consumption,Max Consumption,Total Consumption,Zero Consumption Days,Max-to-Mean Ratio
-HOUSE_101,120,6.5,7.2,0,38.4,5400.25,98,5.9
-HOUSE_102,400,0,0,0,0,0,450,0
-HOUSE_103,60,12.8,6.1,2.5,45.9,8900.75,10,3.58
-HOUSE_104,300,1.2,3.9,0,18.6,1100.4,280,15.5
-HOUSE_105,20,9.7,4.2,1.1,29.3,7200.9,5,3.02
