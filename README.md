@@ -78,6 +78,28 @@ never touches the model — so features can be added, tested and reused independ
 
 ---
 
+## 🎨 Design System — High-Fidelity Claymorphism
+
+The whole UI is built on a **"Digital Clay"** design system: soft-touch matte surfaces, 4-layer shadow
+stacks, super-rounded corners and bouncy micro-interactions.
+
+| Token | Value |
+| :--- | :--- |
+| Canvas | `#F4F1FA` (pale lavender-white) |
+| Text | `#332F3A` primary · `#635F69` muted |
+| Primary accent | `#7C3AED` vivid violet |
+| Secondary accents | `#DB2777` pink · `#0EA5E9` sky · `#10B981` emerald · `#F59E0B` amber |
+| Typography | **Nunito** 700–900 (headings/numbers) + **DM Sans** (body) |
+| Radii | `20px` buttons · `24–32px` cards · `48px` containers — never sharp corners |
+| Shadows | `clay-card`, `clay-btn`, `clay-pressed`, `clay-card-lift` (multi-layer) |
+| Motion | `clay-float` 8s · `clay-float-delayed` 10s · `clay-breathe` 6s + `prefers-reduced-motion` |
+
+Implementation lives in `config.py` (`CLAY` tokens + `get_custom_css()`), with reusable HTML builders
+(`clay_section_title`, `clay_metric`, `clay_chip`, `clay_info_card`, `get_clay_blobs`) and the matching
+theme in `.streamlit/config.toml`. Every chart uses the shared `clay_layout()` palette from `visualizations.py`.
+
+---
+
 ## ⚡ Quick Start
 
 ### 1. Clone the repository
@@ -152,17 +174,20 @@ The dashboard opens at **http://localhost:8501**.
 
 ## 📬 Email Notifications (Optional)
 
-In the sidebar, expand **SMTP Settings** and provide:
+SMTP credentials are read **in this order**:
+
+1. **Streamlit Secrets** — `.streamlit/secrets.toml` locally, or the *Secrets* field on a cloud deployment
+   (copy `.streamlit/secrets.toml.example` and fill it in; `secrets.toml` is git-ignored so keys never reach the repo)
+2. **Sidebar form** — used only when no secrets file exists (local development)
 
 | Field | Example |
 | :--- | :--- |
-| SMTP Server | `smtp.gmail.com` |
-| SMTP Port | `587` |
-| Sender Email | your address |
-| Sender Password | app-specific password |
+| `smtp_server` | `smtp.gmail.com` |
+| `smtp_port` | `587` |
+| `sender_email` | your address |
+| `sender_password` | Gmail app-specific password |
 
-Credentials are entered at runtime only and are **never stored in the codebase**. Once configured, batch runs
-automatically send warning emails to high-risk customers and alert emails to the inspection team.
+Once configured, batch runs automatically send warning emails to high-risk customers and alert emails to the inspection team.
 
 ---
 

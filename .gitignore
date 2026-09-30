@@ -26,6 +26,7 @@ Thumbs.db
 *.log
 .env
 config.local.py
+.streamlit/secrets.toml
 
 # Large datasets that exceed GitHub's 100 MB per-file limit
 data/original data/data.csv
