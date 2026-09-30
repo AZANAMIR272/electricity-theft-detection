@@ -134,6 +134,33 @@ The dashboard opens at **http://localhost:8501**.
 
 ---
 
+## 🚀 Deploy (Live — Streamlit Community Cloud)
+
+Everything the platform needs is already in the repo: `requirements.txt` (root), `app4.py` (entrypoint),
+`.streamlit/config.toml` (theme) and a tracked `model_theft.pkl`.
+
+1. Go to **[share.streamlit.io](https://share.streamlit.io)** → *Continue with GitHub* (use the `AZANAMIR272` account).
+2. **Create app** → *Yup, I have an app*.
+3. Fill in:
+
+   | Field | Value |
+   | :--- | :--- |
+   | Repository | `AZANAMIR272/electricity-theft-detection` |
+   | Branch | `main` |
+   | File path | `app4.py` |
+   | App URL | e.g. `electricity-theft-detection` |
+
+4. **Advanced settings** → Python version **3.11** (or 3.12) → paste the contents of
+   `.streamlit/secrets.toml.example` into **Secrets** (with your real SMTP values, or leave it empty to
+   use the sidebar form).
+5. **Deploy** → build takes a few minutes → live at `https://<your-app>.streamlit.app`.
+6. Any later `git push` to `main` redeploys automatically.
+
+> Deploys **sleep after ~12 h of no traffic** (free tier) — a single visit wakes it up again.
+> Live SMTP needs Gmail's *app-specific password*, which only you can generate.
+
+---
+
 ## 🧬 How Detection Works
 
 1. **Feature Engineering** — raw smart-meter readings are converted into 9 behavioural features:
