@@ -1,0 +1,11 @@
+CONS_NO,missing_day_count,avg_consumption,std_consumption,min_consumption,max_consumption,total_consumption,zero_consumption_days,max_to_mean_ratio,Theft_Probability,Prediction,Risk_Level,Theft_Description,Next_Action
+HOUSE_201,50,7.2,5.8,0.5,36,3600,15,5.0,50.51%,1,Medium,Theft Detected - Pattern Unclear (Investigate Other Factors),Remote Data Audit & Scheduled Physical Check
+HOUSE_202,10,12.5,6.0,2.0,48,1500,0,3.84,21.70%,0,Low,Normal Pattern (No Theft Risk),Monitor Next Reading Cycle
+HOUSE_203,120,1.5,4.2,0.0,18,180,100,12.0,24.23%,0,Low,Normal Pattern (No Theft Risk),Monitor Next Reading Cycle
+HOUSE_204,30,9.0,3.5,1.0,28,270,5,3.11,8.80%,0,Low,Normal Pattern (No Theft Risk),Monitor Next Reading Cycle
+HOUSE_205,200,0.8,3.8,0.0,20,160,180,25.0,19.29%,0,Low,Normal Pattern (No Theft Risk),Monitor Next Reading Cycle
+HOUSE_206,15,11.2,4.5,2.5,35,1680,0,3.12,19.59%,0,Low,Normal Pattern (No Theft Risk),Monitor Next Reading Cycle
+HOUSE_207,60,3.0,3.0,0.0,15,180,40,5.0,38.16%,1,Medium,Theft Detected - Pattern Unclear (Investigate Other Factors),Remote Data Audit & Scheduled Physical Check
+HOUSE_208,5,15.0,5.0,5.0,45,750,0,3.0,10.85%,0,Low,Normal Pattern (No Theft Risk),Monitor Next Reading Cycle
+HOUSE_209,90,2.0,4.0,0.0,20,180,70,10.0,28.11%,0,Low,Normal Pattern (No Theft Risk),Monitor Next Reading Cycle
+HOUSE_210,25,10.0,4.2,1.5,30,250,5,3.0,10.82%,0,Low,Normal Pattern (No Theft Risk),Monitor Next Reading Cycle

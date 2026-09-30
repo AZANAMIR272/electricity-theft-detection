@@ -1,0 +1,11 @@
+CONS_NO,missing_day_count,avg_consumption,std_consumption,min_consumption,max_consumption,total_consumption,zero_consumption_days,max_to_mean_ratio
+HOUSE_201,50,7.2,5.8,0.5,36,3600,15,5
+HOUSE_202,10,12.5,6,2,48,1500,0,3.84
+HOUSE_203,120,1.5,4.2,0,18,180,100,12
+HOUSE_204,30,9,3.5,1,28,270,5,3.11
+HOUSE_205,200,0.8,3.8,0,20,160,180,25
+HOUSE_206,15,11.2,4.5,2.5,35,1680,0,3.12
+HOUSE_207,60,3,3,0,15,180,40,5
+HOUSE_208,5,15,5,5,45,750,0,3
+HOUSE_209,90,2,4,0,20,180,70,10
+HOUSE_210,25,10,4.2,1.5,30,250,5,3
