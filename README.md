@@ -15,6 +15,9 @@
   <a href="#-model--results">Model & Results</a> •
   <a href="#-team">Team</a>
 </p>
+<p align="center">
+  <b>live: https://electricity-theft-detection-team.streamlit.app/ </b>
+</p>
 
 ---
 
